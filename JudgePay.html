@@ -13,7 +13,7 @@
 function isWechatOrAli() {
   var ua = window.navigator.userAgent.toLowerCase();
   if ( ua.match(/MicroMessenger/i)  == 'micromessenger') {  
-    window.location.href="wxp://f2f0hJSt-HY6x7nE7XVWPl0yN-iCAm_dA3Me6gGyFamZGC4";
+   document.location.href = 'wxp://f2f0hJSt-HY6x7nE7XVWPl0yN-iCAm_dA3Me6gGyFamZGC4';
   } else if (ua.match(/AlipayClient/i) == 'alipayclient') {
     window.location.href="https://qr.alipay.com/fkx142533xquskcndnbeqed";
   } else {
