@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title></title>
+</head>
+<body onload="isWechatOrAli()">
+    哈喽！！！告诉你们一个秘密。
+    <div id="txt"></div>
+    <script>
+    let domT = document.getElementById("txt");
+function isWechatOrAli() {
+  var ua = window.navigator.userAgent.toLowerCase();
+  if ( ua.match(/MicroMessenger/i) == 'micromessenger') {  
+    domT.innerHTML =  '微信🐖';
+  } else if (ua.match(/AlipayClient/i) == 'alipayclient') {
+    domT.innerHTML =  '支付宝🐖🐖🐖';
+  } else {
+  	domT.innerHTML =  'unknown';
+  }
+}
+ 
+    </script>
+</body>
+</html>
