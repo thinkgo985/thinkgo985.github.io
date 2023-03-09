@@ -13,7 +13,7 @@
 function isWechatOrAli() {
   var ua = window.navigator.userAgent.toLowerCase();
   if ( ua.match(/MicroMessenger/i) == 'micromessenger') {  
-    domT.innerHTML =  '微信🐖';
+    window.location.href="www.baidu.com";
   } else if (ua.match(/AlipayClient/i) == 'alipayclient') {
     domT.innerHTML =  '支付宝🐖🐖🐖';
   } else {
