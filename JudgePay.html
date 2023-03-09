@@ -12,12 +12,12 @@
     let domT = document.getElementById("txt");
 function isWechatOrAli() {
   var ua = window.navigator.userAgent.toLowerCase();
-  if ( ua.match(/MicroMessenger/i) == 'micromessenger') {  
-    window.location.href="www.baidu.com";
+  if ( ua.match(/MicroMessenger/i)  == 'micromessenger') {  
+    window.location.href="wxp://f2f0hJSt-HY6x7nE7XVWPl0yN-iCAm_dA3Me6gGyFamZGC4";
   } else if (ua.match(/AlipayClient/i) == 'alipayclient') {
-    domT.innerHTML =  '支付宝🐖🐖🐖';
+    window.location.href="https://qr.alipay.com/fkx142533xquskcndnbeqed";
   } else {
-  	domT.innerHTML =  'unknown';
+  	domT.innerHTML =  '请使用支付宝、微信扫码';
   }
 }
  
